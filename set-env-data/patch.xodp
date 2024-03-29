@@ -1,4 +1,5 @@
 {
+  "description": "Set environmental data for relative humidity and temperature compensation.",
   "nodes": [
     {
       "id": "BJ0MPO410",
@@ -26,7 +27,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 3,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -41,6 +42,28 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Relative humidity (%).",
+      "id": "Bkjrgt410",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Temperature (°C).",
+      "id": "rk0vxFVy0",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
     }
   ]
 }

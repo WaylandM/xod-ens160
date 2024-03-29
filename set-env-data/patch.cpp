@@ -6,17 +6,10 @@ node {
     void evaluate(Context ctx) {
 
         // The node responds only if there is an input pulse
-        if (!isInputDirty<input_INIT>(ctx))
+        if (!isInputDirty<input_UPD>(ctx))
             return;
 
         auto sensor = getValue<input_DEV>(ctx);
-
-        if (!sensor->available()) {
-            raiseError(ctx);
-            return;
-        }
-
-        sensor->measure(true);
 
         emitValue<output_AQI>(ctx, sensor->getAQI());
         emitValue<output_TVOC>(ctx, sensor->getTVOC());
