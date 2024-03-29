@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "BJ0MPO410",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An ENS160 device.",
+      "id": "r1xCGw_41C",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-ens160-device"
+    },
+    {
+      "description": "Update. Triggers reading.",
+      "id": "Syb0MvdVJ0",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "B1MCGw_4yR",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "description": "Create an ENS160 device.",
+  "nodes": [
+    {
+      "id": "r17RsIE10",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An ENS160 device.",
+      "id": "rJ50i8NyR",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
+      "description": "I²C bus",
+      "id": "Hk5r7PN10",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "description": "I²C address of ENS160 device.",
+      "id": "ByN8mvEJC",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
+}

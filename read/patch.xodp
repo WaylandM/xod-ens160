@@ -1,0 +1,80 @@
+{
+  "description": "Measure air quality. ",
+  "nodes": [
+    {
+      "id": "S1UZldV10",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An ENS160 device.",
+      "id": "BJg8-lO4JR",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-ens160-device"
+    },
+    {
+      "description": "Update. Triggers reading.",
+      "id": "Hyb8WgONkA",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "SJzLbl_Nk0",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Air Quality Index of the UBA (German Federal Environmental Agency). Rating: 1= excellent;  2=good; 3=moderate; 4=poor; 5=unhealthy.",
+      "id": "BkdhmOEy0",
+      "label": "AQI",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Total Volatile Organic Compounds (ppb).",
+      "id": "HJ237ONk0",
+      "label": "TVOC",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Carbon dioxide concentration (ppm)",
+      "id": "Sy233XO4J0",
+      "label": "eCO2",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
+}
